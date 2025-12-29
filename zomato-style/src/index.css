@@ -1,0 +1,151 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #121212;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: #1f1f1f;
+  padding: 20px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1e1e1e;
+  color: white;
+  min-width: 180px;
+}
+
+.restaurant-list {
+  display: grid;
+  gap: 14px;
+}
+
+.restaurant-card {
+  display: flex;
+  gap: 14px;
+  background: #ffffff;
+  color: #222;
+  border-radius: 12px;
+  padding: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.restaurant-info {
+  flex: 1;
+}
+
+.restaurant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurant-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.rating {
+  background: #1c7c54;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.cuisine {
+  font-size: 14px;
+  color: #666;
+  margin: 6px 0;
+}
+
+.meta {
+  display: flex;
+  gap: 6px;
+  font-size: 13px;
+  color: #777;
+}
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #aaa;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 640px) {
+  .restaurant-card {
+    flex-direction: column;
+  }
+
+  .restaurant-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #eee;
+}
+
+
+  .filters input,
+  .filters select {
+    width: 100%;
+  }
+}

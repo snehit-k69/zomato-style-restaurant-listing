@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Spice Villa",
+    "rating": 4.3,
+    "cuisine": "Indian",
+    "distance": "2.1 km",
+    "priceRange": "₹200–₹400",
+    "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Pasta Street",
+    "rating": 4.6,
+    "cuisine": "Italian",
+    "distance": "3.5 km",
+    "priceRange": "₹500–₹800",
+    "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Dragon Bowl",
+    "rating": 4.0,
+    "cuisine": "Chinese",
+    "distance": "1.8 km",
+    "priceRange": "₹300–₹600",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+  }
+]
