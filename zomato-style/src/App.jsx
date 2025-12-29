@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>Zomato-style Restaurants in Bengaluru</h1>
+        <h1>Zomato Restaurants listing</h1>
       </header>
 
       <div className="page-container">
